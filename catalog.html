@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Каталог</title>
+        <link rel="stylesheet" href="styles/style.css" />
+        <!-- Подключение шрифта  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <!--\\\\\\  -->
+        <script src="scripts/catalog.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <!-- лого -->
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="logo" />
+            </a>
+            <!-- ссылки сверху -->
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="about.html">О нас</a>
+                <a href="feedback.html">Отзывы</a>
+                <a href="form.html">Связь с нами</a>
+            </div>
+        </nav>
+        <section class="catalog">
+            <input
+                type="text"
+                class="search"
+                placeholder="Поиск..."
+                oninput="search()"
+            />
+            <div class="tags">
+                <btn class="tag" data-filter="bestseller">бестселлеры</btn>
+                <btn class="tag" data-filter="new">новинки</btn>
+                <btn class="tag" data-filter="fantastic">фантастика</btn>
+                <btn class="tag" data-filter="fiction">художествееная</btn>
+                <btn class="tag" data-filter="foreign">зарубежная</btn>
+            </div>
+            <div class="books">
+                <div class="book" data-filter="fiction">
+                    <div class="image">
+                        <img src="images/book1.png" alt="Горе от ума" />
+                        <p class="price">500₽</p>
+                    </div>
+                    <p class="name">Горе от ума</p>
+                    <p class="author">Грибоедов А.С</p>
+                </div>
+                <div class="book" data-filter="fiction,bestseller">
+                    <div class="image">
+                        <img src="images/book2.png" alt="Евгений Онегин" />
+                        <p class="price">500₽</p>
+                    </div>
+                    <p class="name">Евгений Онегин</p>
+                    <p class="author">Пушкин А.С</p>
+                </div>
+                <div class="book" data-filter="fiction,foreign">
+                    <div class="image">
+                        <img src="images/book3.jpeg" alt="Евгений Онегин" />
+                        <p class="price">500₽</p>
+                    </div>
+                    <p class="name">Идеальный муж</p>
+                    <p class="author">Оскар Уайльд</p>
+                </div>
+                <div class="book" data-filter="bestseller">
+                    <div class="image">
+                        <img
+                            src="https://api.bookmate.ru/assets/books-covers/4b/56/LJo78h7s-ipad.jpeg?image_hash=ea45339e078aa46531c8c794d01737fc"
+                            alt="Евгений Онегин"
+                        />
+                        <p class="price">500₽</p>
+                    </div>
+                    <p class="name">Не орите на меня!</p>
+                    <p class="author">Игорь Романов</p>
+                </div>
+                <div class="book" data-filter="new">
+                    <div class="image">
+                        <img
+                            src="https://api.bookmate.ru/assets/books-covers/40/c3/PuDv3Gor-ipad.jpeg?image_hash=f39ac02c4e0ccb76bde68c8936cb22f2"
+                            alt="Евгений Онегин"
+                        />
+                        <p class="price">500₽</p>
+                    </div>
+                    <p class="name">Девушки из Блумсбери</p>
+                    <p class="author">Натали Дженнер</p>
+                </div>
+                <div class="book" data-filter="fantastic">
+                    <div class="image">
+                        <img
+                            src="https://api.bookmate.ru/assets/books-covers/2b/66/LwOTonb0-ipad.jpeg?image_hash=b6cfecc6c9d3e46e1110fd83b3052088"
+                            alt="Евгений Онегин"
+                        />
+                        <p class="price">500₽</p>
+                    </div>
+                    <p class="name">Автостопом по галактике.</p>
+                    <p class="author">Дуглас Адамс</p>
+                </div>
+                <div class="book" data-filter="fantastic">
+                    <div class="image">
+                        <img
+                            src="https://api.bookmate.ru/assets/books-covers/16/bc/EQWusb4q-ipad.jpeg?image_hash=41db017edc327d98c77c1f1e6008b037"
+                            alt="Евгений Онегин"
+                        />
+                        <p class="price">500₽</p>
+                    </div>
+                    <p class="name">Голодные игры.</p>
+                    <p class="author">Сьюзен Коллинз</p>
+                </div>
+                <div class="book" data-filter="fiction">
+                    <div class="image">
+                        <img
+                            src="https://api.bookmate.ru/assets/books-covers/b5/02/wkIiF0N9-ipad.jpeg?image_hash=c989ee61b947083f1e53bcc514cecea7"
+                            alt="Евгений Онегин"
+                        />
+                        <p class="price">500₽</p>
+                    </div>
+                    <p class="name">Портрет Дориана Грея</p>
+                    <p class="author">Оскар Уайльд</p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
